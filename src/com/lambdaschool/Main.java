@@ -20,5 +20,6 @@ public class Main {
     piggyBank.add(new Penny(10));
 
     piggyBank.displayContents();
+    piggyBank.displayValue();
   }
 }
