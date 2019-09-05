@@ -11,12 +11,7 @@ public class Quarter extends Coin {
   }
 
   @Override
-  public double getCoinValue() {
-    return 0.25;
-  }
-
-  @Override
-  public String getCoinName() {
-    return "Quarter";
+  public CoinType getCoinType() {
+    return CoinType.QUARTER;
   }
 }

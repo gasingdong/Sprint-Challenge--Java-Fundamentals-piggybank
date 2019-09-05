@@ -11,12 +11,7 @@ public class Penny extends Coin {
   }
 
   @Override
-  public double getCoinValue() {
-    return 0.01;
-  }
-
-  @Override
-  public String getCoinName() {
-    return "Penny";
+  public CoinType getCoinType() {
+    return CoinType.PENNY;
   }
 }

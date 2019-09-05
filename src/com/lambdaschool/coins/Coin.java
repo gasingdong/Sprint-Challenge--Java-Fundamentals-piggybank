@@ -28,15 +28,13 @@ public abstract class Coin {
     quantity -= amount;
   }
 
+  public abstract CoinType getCoinType();
+
   public double getTotalValue() {
-    return quantity * getCoinValue();
+    return quantity * getCoinType().getValue();
   }
 
   public void displayQuantity() {
-    System.out.println(quantity + " " + getCoinName());
+    System.out.println(quantity + " " + getCoinType().getName());
   }
-
-  public abstract double getCoinValue();
-
-  public abstract String getCoinName();
 }

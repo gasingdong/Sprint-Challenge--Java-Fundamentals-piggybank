@@ -16,12 +16,7 @@ public class Dollar extends Coin {
   }
 
   @Override
-  public double getCoinValue() {
-    return 1.0;
-  }
-
-  @Override
-  public String getCoinName() {
-    return "Dollar";
+  public CoinType getCoinType() {
+    return CoinType.DOLLAR;
   }
 }

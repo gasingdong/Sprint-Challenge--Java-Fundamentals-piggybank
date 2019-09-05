@@ -11,12 +11,7 @@ public class Nickel extends Coin {
   }
 
   @Override
-  public double getCoinValue() {
-    return 0.05;
-  }
-
-  @Override
-  public String getCoinName() {
-    return "Nickel";
+  public CoinType getCoinType() {
+    return CoinType.NICKEL;
   }
 }
