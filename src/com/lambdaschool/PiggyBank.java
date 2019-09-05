@@ -9,10 +9,16 @@ import java.util.Map;
 public class PiggyBank {
 
   private List<Coin> order;
-  private Map<Coin, Integer> contents;
 
   public PiggyBank() {
     this.order = new ArrayList<>();
-    this.contents = new HashMap<>();
+  }
+
+  public void add(Coin coin) {
+    order.add(coin);
+  }
+
+  public void displayContents() {
+    order.forEach(Coin::displayQuantity);
   }
 }

@@ -32,5 +32,11 @@ public abstract class Coin {
     return quantity * getCoinValue();
   }
 
+  public void displayQuantity() {
+    System.out.println(quantity + " " + getCoinName());
+  }
+
   public abstract double getCoinValue();
+
+  public abstract String getCoinName();
 }
