@@ -1,22 +1,22 @@
 package com.lambdaschool.coins;
 
-public class Quarter extends Coin {
+public class Dime extends Coin {
 
-  public Quarter() {
+  public Dime() {
     super();
   }
 
-  public Quarter(int quantity) {
+  public Dime(int quantity) {
     super(quantity);
   }
 
   @Override
   public double getCoinValue() {
-    return 0.25;
+    return 0.1;
   }
 
   @Override
   public String getCoinName() {
-    return "Quarter";
+    return "Dime";
   }
 }
