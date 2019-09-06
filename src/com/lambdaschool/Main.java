@@ -21,5 +21,15 @@ public class Main {
 
     piggyBank.displayContents();
     piggyBank.displayValue();
+
+    piggyBank.remove(1.5);
+
+    piggyBank.displayContents();
+    piggyBank.displayValue();
+
+    piggyBank.remove(3.38);
+
+    piggyBank.displayContents();
+    piggyBank.displayValue();
   }
 }
